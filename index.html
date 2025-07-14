@@ -141,6 +141,7 @@
             font-size: 4rem;
             color: #667eea;
         }
+      
 
         .profile-img:hover {
             transform: scale(1.05);
@@ -621,7 +622,19 @@
         }
 
         /* Responsive Design */
+        @media (min-width: 769px) {
+            .hero {
+                padding-top: 100px; /* Or whatever your navbar height is on desktop */
+            }
+        }
         @media (max-width: 768px) {
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+            .hero {
+                padding-top: 80px; /* Adjust this value to match your navbar height */
+            }
             .nav-links {
                 display: none;
             }
