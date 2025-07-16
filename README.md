@@ -9,7 +9,7 @@
 
 1. **Clone or Download the Repository**
    ```sh
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/DanishAhmed33/Danish-Ahmed.git
    ```
 
 2. **Open the Website**
