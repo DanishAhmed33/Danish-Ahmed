@@ -85,22 +85,12 @@
             width: 100%;
         }
 
-        .mobile-controls {
-            display: none;
-        }
-        
         .mobile-menu {
             display: none;
             background: none;
             border: none;
             font-size: 1.5rem;
             cursor: pointer;
-            color: #667eea;
-            transition: color 0.3s ease;
-        }
-        
-        .mobile-menu:hover {
-            color: #764ba2;
         }
 
         /* Hero Section */
@@ -151,7 +141,6 @@
             font-size: 4rem;
             color: #667eea;
         }
-      
 
         .profile-img:hover {
             transform: scale(1.05);
@@ -632,88 +621,11 @@
         }
 
         /* Responsive Design */
-        @media (min-width: 769px) {
-            .hero {
-                padding-top: 100px; /* Or whatever your navbar height is on desktop */
-            }
-        }
         @media (max-width: 768px) {
-            .profile-img {
-                width: 120px;
-                height: 120px;
-            }
-            .hero {
-                padding-top: 80px; /* Adjust this value to match your navbar height */
-            }
-            
-            .nav-content {
-                position: relative;
-            }
-            
             .nav-links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                right: 0;
-                width: 250px;
-                background: rgba(255, 255, 255, 0.98);
-                -webkit-backdrop-filter: blur(10px);
-                backdrop-filter: blur(10px);
-                flex-direction: column;
-                padding: 0.5rem 0;
-                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-                border-radius: 0 0 10px 10px;
-                z-index: 1000;
-            }
-            
-            .nav-links.active {
-                display: flex;
-            }
-            
-            .nav-links li {
-                margin: 0;
-            }
-            
-            .nav-links a {
-                display: block;
-                padding: 0.5rem 1.5rem;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-                font-size: 0.9rem;
-            }
-            
-            .nav-links a:last-child {
-                border-bottom: none;
-            }
-            
-            /* Hide dark mode button in mobile nav links */
-            .nav-links #darkModeToggle {
                 display: none;
             }
 
-            .mobile-controls {
-                display: flex;
-                align-items: center;
-                gap: 1rem;
-            }
-            
-            .mobile-dark-toggle {
-                display: block;
-                background: none;
-                border: 2px solid #667eea;
-                color: #667eea;
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                cursor: pointer;
-                font-size: 1rem;
-                transition: all 0.3s ease;
-            }
-            
-            .mobile-dark-toggle:hover {
-                background: #667eea;
-                color: white;
-            }
-            
             .mobile-menu {
                 display: block;
             }
@@ -891,34 +803,6 @@
             color: #64B5F6 !important;
         }
 
-        body.dark-mode .nav-links {
-            background: rgba(10, 10, 10, 0.98);
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        body.dark-mode .nav-links a {
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        body.dark-mode .mobile-dark-toggle {
-            border-color: #64B5F6;
-            color: #64B5F6;
-        }
-        
-        body.dark-mode .mobile-dark-toggle:hover {
-            background: #64B5F6;
-            color: #232526;
-        }
-        
-        body.dark-mode .mobile-menu {
-            color: #64B5F6;
-        }
-        
-        body.dark-mode .mobile-menu:hover {
-            color: #fff;
-        }
-        
         body.dark-mode .nav-links a:hover,
         body.dark-mode .project-links a:hover,
         body.dark-mode .contact-item a:hover {
@@ -1093,14 +977,9 @@
                     </button></li>
                 </ul>
                 
-                <div class="mobile-controls">
-                    <button id="mobileDarkModeToggle" class="mobile-dark-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
-                        <i class="fas fa-moon"></i>
-                    </button>
-                    <button class="mobile-menu">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
+                <button class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
             </div>
         </div>
     </nav>
@@ -1117,14 +996,14 @@
                 <p class="hero-summary">
                     Passionate software developer with a strong foundation in modern technologies. 
                     Recent graduate from PES University with experience in full-stack development 
-                     Data Science and Machine Learning and a keen interest in creating innovative solutions.
+                    and a keen interest in creating innovative solutions.
                 </p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">
                         <i class="fas fa-envelope"></i> Get In Touch
                     </a>
-                    <a href="Danish Ahmed Resume 1.pdf" class="btn btn-outline" target="_blank" rel="noopener" title="Download Resume">
-                        <i class="fas fa-file-pdf"></i> Resume
+                    <a href="C:\Users\Danish Ahmed\Documents\2024 summer\portfolio\Danish Ahmed Resume 1.pdf" class="btn btn-outline" download target="_blank" rel="noopener" title="Download Resume">
+                        <i class="fas fa-download"></i> Download Resume
                     </a>
                 </div>
             </div>
@@ -1167,7 +1046,7 @@
                     <div>
                         <div class="degree">Bachelor of Technology in Computer Science</div>
                         <div class="university">PES University, Bangalore</div>
-                        <!-- <div class="grade">CGPA: 7.75/10</div> -->
+                        <div class="grade">CGPA: 7.75/10</div>
                     </div>
                     <div class="year">2021 - 2025</div>
                 </div>
@@ -1180,8 +1059,8 @@
             <div class="education-item fade-in">
                 <div class="education-header">
                     <div>
-                        <div class="degree">Pre University (PCMB)</div>
-                        <div class="university">St Mary's PU College, Chikkamagalur</div>
+                        <div class="degree">Pre-University Course (Science)</div>
+                        <div class="university">St Mary's PU College, Bangalore</div>
                         <div class="grade">Percentage: 100%</div>
                     </div>
                     <div class="year">2020 - 2021</div>
@@ -1191,21 +1070,6 @@
                     Developed strong analytical and problem-solving skills.
                 </p>
             </div>
-            <div class="education-item fade-in">
-                <div class="education-header">
-                    <div>
-                        <div class="degree">10th Standard</div>
-                        <div class="university">MES PLMV High School, Chikkamagalur</div>
-                        <div class="grade">Percentage: 97.92%</div>
-                    </div>
-                    <div class="year">2018 - 2019</div>
-                </div>
-                <p>
-                    Focused on Physics, Chemistry, Mathematics, and Computer Science. 
-                    Developed strong analytical and problem-solving skills.
-                </p>
-            </div>
-            
         </div>
     </section>
 
@@ -1239,29 +1103,19 @@
             <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-img">
-                        <i class="fas fa-brain"></i>
+                        <i class="fas fa-shopping-cart"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">End-to-End Machine Learning Projects</h3>
+                        <h3 class="project-title">E-Commerce Platform</h3>
                         <p class="project-description">
-                            <ul>
-                                <li>Designed and implemented complete ML pipelines in Python using Jupyter notebooks, covering data preprocessing, feature engineering, model training
-                                    (CatBoost), evaluation, and versioned deployment.</li>
-                                
-                            </ul>
-                            
+                            A full-stack e-commerce application with user authentication, 
+                            product catalog, shopping cart, and payment integration.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Jupyter Notebook</span>
-                            <span class="tech-tag">CatBoost</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">NumPy</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Seaborn</span>
-                            <span class="tech-tag">SciPy</span>
-                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -1271,24 +1125,18 @@
                 </div>
                 <div class="project-card fade-in">
                     <div class="project-img">
-                        <i class="fas fa-car"></i>
+                        <i class="fas fa-tasks"></i>
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Fastag Allocation system|</h3>
+                        <h3 class="project-title">Task Management App</h3>
                         <p class="project-description">
-                            <ul>
-                                <li>Developed a full-stack web application using Flask, MySQL enabling secure registration and management of agents and customers validation for
-                                    enhanced security.
-                                </li>
-                            </ul>
+                            A productivity app for managing tasks with features like 
+                            categories, deadlines, and progress tracking.
                         </p>
                         <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Flask</span>
-                            <span class="tech-tag">MySQL</span>
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Firebase</span>
+                            <span class="tech-tag">Redux</span>
                         </div>
                         <div class="project-links">
                             <a href="#"><i class="fas fa-external-link-alt"></i> Live Demo</a>
@@ -1387,35 +1235,35 @@
             <div class="certifications-grid">
                 <div class="cert-card fade-in">
                     <div class="cert-icon">
-                        <i class="fas fa-brain"></i>
+                        <i class="fab fa-aws"></i>
                     </div>
-                    <h3 class="cert-title">Data Science, Machine Learning, DL</h3>
-                    <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">Issued: July 2025</p>
+                    <h3 class="cert-title">AWS Cloud Practitioner</h3>
+                    <p class="cert-issuer">Amazon Web Services</p>
+                    <p class="cert-date">Issued: March 2024</p>
                 </div>
                 <div class="cert-card fade-in">
                     <div class="cert-icon">
-                        <i class="fab fa-python"></i>
+                        <i class="fab fa-google"></i>
                     </div>
-                    <h3 class="cert-title">Python programming</h3>
-                    <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">Issued: July 2025</p>
+                    <h3 class="cert-title">Google Cloud Digital Leader</h3>
+                    <p class="cert-issuer">Google Cloud</p>
+                    <p class="cert-date">Issued: January 2024</p>
                 </div>
                 <div class="cert-card fade-in">
                     <div class="cert-icon">
-                        <i class="fab fa-google-drive"></i>
+                        <i class="fab fa-react"></i>
                     </div>
-                    <h3 class="cert-title">Google Sheets</h3>
-                    <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">Issued: July 2025</p>
+                    <h3 class="cert-title">React Developer Certification</h3>
+                    <p class="cert-issuer">Meta (Facebook)</p>
+                    <p class="cert-date">Issued: December 2023</p>
                 </div>
                 <div class="cert-card fade-in">
                     <div class="cert-icon">
                         <i class="fas fa-brain"></i>
                     </div>
                     <h3 class="cert-title">Machine Learning Fundamentals</h3>
-                    <p class="cert-issuer">Udemy</p>
-                    <p class="cert-date">Issued: July 2025</p>
+                    <p class="cert-issuer">IBM</p>
+                    <p class="cert-date">Issued: November 2023</p>
                 </div>
             </div>
         </div>
@@ -1457,7 +1305,7 @@
                     
                     <div class="contact-item">
                         <i class="fas fa-file-pdf"></i>
-                        <a href="Danish Ahmed Resume 1.pdf" target="_blank" rel="noopener" title="Download Resume">Download Resume</a>
+                        <a href="C:\Users\Danish Ahmed\Documents\2024 summer\portfolio\Danish Ahmed Resume 1.pdf" target="_blank" rel="noopener" title="Download Resume">Download Resume</a>
                     </div>
                 </div>
                 
@@ -1610,26 +1458,12 @@
             this.reset();
         });
 
-        // Mobile menu toggle
+        // Mobile menu toggle (basic implementation)
         const mobileMenuBtn = document.querySelector('.mobile-menu');
         const navLinks = document.querySelector('.nav-links');
         
         mobileMenuBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-        
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
-        
-        // Close mobile menu when clicking outside
-        document.addEventListener('click', (e) => {
-            if (!e.target.closest('.nav-content')) {
-                navLinks.classList.remove('active');
-            }
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
         });
 
         // Add typing animation to hero text
@@ -1740,7 +1574,6 @@
 
         // Dark mode toggle
         const darkModeToggle = document.getElementById('darkModeToggle');
-        const mobileDarkModeToggle = document.getElementById('mobileDarkModeToggle');
         const body = document.body;
 
         // Load dark mode preference
@@ -1748,7 +1581,7 @@
             body.classList.add('dark-mode');
         }
 
-        function toggleDarkMode() {
+        darkModeToggle.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
             // Save preference
             if (body.classList.contains('dark-mode')) {
@@ -1756,10 +1589,7 @@
             } else {
                 localStorage.setItem('darkMode', 'disabled');
             }
-        }
-
-        darkModeToggle.addEventListener('click', toggleDarkMode);
-        mobileDarkModeToggle.addEventListener('click', toggleDarkMode);
+        });
     </script>
 </body>
 </html>
