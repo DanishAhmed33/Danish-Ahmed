@@ -641,9 +641,10 @@
             .profile-img {
                 width: 120px;
                 height: 120px;
+                margin-top: 20px; /* Add this line for extra spacing */
             }
             .hero {
-                padding-top: 80px; /* Adjust this value to match your navbar height */
+                padding-top: 150px; /* Increase further to ensure no overlap */
             }
             
             .nav-content {
@@ -1710,9 +1711,13 @@
                         skillsObserver.unobserve(entry.target);
                     }
                 });
-            }, { threshold: 0.5 });
-            
+            }, { threshold: 0.1 }); // Lowered threshold for mobile
             skillsObserver.observe(skillsSection);
+        } else {
+            // Fallback: show all skills if observer is not supported
+            document.querySelectorAll('.skill-item').forEach(skill => {
+                skill.classList.add('animated');
+            });
         }
 
         // Add dynamic background animation
