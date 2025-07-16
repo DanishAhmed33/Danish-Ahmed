@@ -1071,6 +1071,15 @@
         body.dark-mode #darkModeToggle i {
             transform: rotate(-30deg) scale(1.2);
         }
+        #darkModeToggle {
+            margin-left: 1rem;
+        }
+        .profile-photo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
     </style>
 </head>
 <body>
@@ -1088,7 +1097,7 @@
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#certifications">Certifications</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><button id="darkModeToggle" class="btn btn-outline" style="margin-left: 1rem;" title="Toggle dark mode" aria-label="Toggle dark mode">
+                    <li><button id="darkModeToggle" class="btn btn-outline" title="Toggle dark mode" aria-label="Toggle dark mode">
                         <i class="fas fa-moon"></i>
                     </button></li>
                 </ul>
@@ -1110,7 +1119,7 @@
         <div class="container">
             <div class="hero-content">
                 <div class="profile-img">
-                    <img src="Danish Ahmed photo.jpg" alt="Danish Ahmed" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    <img src="Danish Ahmed photo.jpg" alt="Danish Ahmed" class="profile-photo">
                 </div>
                 <h1>Danish Ahmed</h1>
                 <p class="tagline">Software Developer | Data Science | Machine Learning | Recent Graduate | Problem Solver </p>
@@ -1447,12 +1456,12 @@
                     
                     <div class="contact-item">
                         <i class="fab fa-linkedin"></i>
-                        <a href="https://www.linkedin.com/in/danishahmed33" target="_blank" rel="noopener">linkedin.com/in/danishahmed33</a>
+                        <a href="https://www.linkedin.com/in/danishahmed33" target="_blank" rel="noopener" title="LinkedIn">linkedin.com/in/danishahmed33</a>
                     </div>
                     
                     <div class="contact-item">
                         <i class="fab fa-github"></i>
-                        <a href="https://github.com/DanishAhmed33/" target="_blank" rel="noopener">github.com/DanishAhmed33</a>
+                        <a href="https://github.com/DanishAhmed33/" target="_blank" rel="noopener" title="github">github.com/DanishAhmed33</a>
                     </div>
                     
                     <div class="contact-item">
@@ -1497,10 +1506,10 @@
     <footer class="footer">
         <div class="container">
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/danishahmed33" target="_blank" rel="noopener",title="linkedin">
+                <a href="https://www.linkedin.com/in/danishahmed33" target="_blank" rel="noopener" title="LinkedIn">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://github.com/DanishAhmed33/" target="_blank" rel="noopener", title="github">
+                <a href="https://github.com/DanishAhmed33/" target="_blank" rel="noopener" title="github">
                     <i class="fab fa-github"></i>
                 </a>
                 <a href="https://twitter.com/yourusername" target="_blank" rel="noopener" title="Twitter">
