@@ -57,6 +57,8 @@
                 0 0 0 1px rgba(255, 255, 255, 0.2);
             transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             border-bottom: 1px solid rgba(102, 126, 234, 0.1);
+            height: auto;
+            min-height: 70px;
         }
 
         .nav-content {
@@ -134,7 +136,7 @@
 
         /* Hero Section */
         .hero {
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -142,6 +144,7 @@
             color: white;
             position: relative;
             overflow: hidden;
+            padding: 2rem 0;
         }
 
         .hero::before {
@@ -211,6 +214,9 @@
         .hero-content {
             z-index: 2;
             position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
         }
 
         .profile-img {
@@ -897,17 +903,34 @@
         /* Responsive Design */
         @media (min-width: 769px) {
             .hero {
-                padding-top: 100px; /* Or whatever your navbar height is on desktop */
+                padding-top: 120px; /* Increased padding for desktop */
+                min-height: 100vh;
             }
         }
         @media (max-width: 768px) {
             .profile-img {
                 width: 120px;
                 height: 120px;
-                margin-top: 20px; /* Add this line for extra spacing */
+                margin-top: 40px; /* Increased spacing from navbar */
             }
             .hero {
-                padding-top: 150px; /* Increase further to ensure no overlap */
+                padding-top: 180px; /* Increased padding to prevent navbar overlap */
+                min-height: 100vh;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem; /* Slightly smaller for mobile */
+                margin-top: 1rem;
+            }
+            
+            .tagline {
+                font-size: 1.1rem;
+                margin-bottom: 1.5rem;
+            }
+            
+            .hero-summary {
+                font-size: 1rem;
+                margin-bottom: 1.5rem;
             }
             
             .nav-content {
@@ -1002,6 +1025,13 @@
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
+                gap: 1rem;
+            }
+            
+            .cta-buttons .btn {
+                width: 100%;
+                max-width: 280px;
+                justify-content: center;
             }
 
             .education-header,
@@ -1009,6 +1039,35 @@
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 0.5rem;
+            }
+        }
+
+        /* Extra small screens */
+        @media (max-width: 480px) {
+            .hero {
+                padding-top: 200px;
+            }
+            
+            .profile-img {
+                width: 100px;
+                height: 100px;
+                margin-top: 30px;
+            }
+            
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .tagline {
+                font-size: 1rem;
+            }
+            
+            .hero-summary {
+                font-size: 0.9rem;
+            }
+            
+            .navbar {
+                padding: 1rem 0;
             }
         }
 
